@@ -31,5 +31,3 @@ const walls = [
     Bodies.rectangle(width, height / 2, 40, height, { isStatic:true })
 ];
 World.add(world,walls);
-
-const x = 10;

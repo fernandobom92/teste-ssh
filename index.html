@@ -2,8 +2,44 @@
 <html>
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                background-color: black;
+            }
+            .hidden{
+                display: none !important;
+            }
+            h1 {
+                color: white;
+                font-size: 36px;
+            }
+            .winner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                z-index: 1;
+                height: 100vh;
+                width: 100vw;
+            }
+            .reload {
+                border: none;
+                background-color: blueviolet;
+                height: 100px;
+                width: 270px;
+                margin-top: 180px;
+                position: inherit;
+                font-size: 35px;
+                color: blanchedalmond;
+            }
+        </style>
     </head>    
     <body>
+        <div class="winner hidden">
+            <h1>Você venceu!</h1>
+            <button class="reload" onclick="location.reload()">Recarregar</button>
+        </div>
         <script src="index.js"></script>
         <script src="teste.js"></script>
         <p></p>
